@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    form {
+        display: flex;
+        height: 100vh;
+        justify-content: center;
+        align-items: center;
+    }
+    .form-content{
+        background-color: rgba(0, 0, 0, 0.3);
+        width: 600px;
+        display: flex;
+        flex-direction: column;
+       padding: 3rem 6rem;
+    }
+    .input-group{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        margin-top: 2rem;
+    }
+   .input {
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: 1px solid #646464;
+    border-radius: 5px;
+    padding: 0 10px;
+    height: 40px;
+    gap: 8px; /* spacing between icon and input */
+}
+
+.input i {
+    color: #555;
+    font-size: 1.2rem;
+}
+
+.input input {
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background: transparent;
+}
+
+</style>
+
+<body>
+    <form>
+
+        <div class="form-content">
+            <h2>Welcome Back!</h2>
+            <div class="inputes">
+                <div class="input-group">
+                    <label for="firstname">Firstname:</label>
+                    <div class="input">
+                        <i class='bx bx-user'></i>
+                        <input type="text" id="firstname" required>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
